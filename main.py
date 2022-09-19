@@ -23,4 +23,4 @@ def get_Env():
     return os.getenv('PYTHON_API_MOVIE')
 
 if __name__ == '__main__':
-    app.run(port=7777)
+    app.run()
