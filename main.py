@@ -19,15 +19,6 @@ def home_page():
     random_number = random.randint(1,len(z))-1
     return response.json()
 
-@app.route('/user/', methods=['GET'])
-def request_page():
-    user_query = str(request.args.get('user'))
-
-    data_set = {'Page': 'Request', 'Message': f'Successfully got the request for {user_query}', 'Timestamp': time.time()}
-    json_dump = json.dumps(data_set)
-
-    return json_dump
-
 def get_Env():
     return os.getenv('PYTHON_API_MOVIE')
 
