@@ -1,8 +1,5 @@
 from flask import *
 import json, time, requests, random, os
-from dotenv import load_dotenv, find_dotenv
-
-load_dotenv(find_dotenv())
 
 app = Flask(__name__)
 
