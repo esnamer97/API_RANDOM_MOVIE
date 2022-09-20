@@ -14,7 +14,7 @@ def home_page():
     y = json.loads(data)
     z = y["results"]
     random_number = random.randint(1, len(z))-1
-    return z[random_number]
+    return z[random_number]["original_title"]
 
 def get_Env():
     return os.getenv('PYTHON_API_MOVIE')
