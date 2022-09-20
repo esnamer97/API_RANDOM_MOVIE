@@ -1,5 +1,5 @@
 from flask import *
-import json, time, requests, random, os
+import json, requests, random, os
 
 app = Flask(__name__)
 
