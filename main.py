@@ -13,7 +13,7 @@ def home_page():
     data = json.dumps(response.json())
     y = json.loads(data)
     z = y["results"]
-    random_number = random.randint(1,len(z))-1
+    random_number = random.randint(1, len(z))-1
     return z[random_number]
 
 def get_Env():
